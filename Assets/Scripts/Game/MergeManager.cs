@@ -19,10 +19,11 @@ public class MergeManager : MonoBehaviour
 
         Vector3 spawnPos = (a.transform.position + b.transform.position) / 2f;
 
+        GameManager.Instance.RemoveChicken(a);
+        GameManager.Instance.RemoveChicken(b);
         Destroy(a.gameObject);
         Destroy(b.gameObject);
 
-        GameObject newChicken = Instantiate(chickenPrefab, spawnPos, Quaternion.identity);
-        newChicken.GetComponent<MergeChicken>().Init(a.Level + 1);
+        GameManager.Instance.SpawnChicken(a.Level + 1, spawnPos);
     }
 }

@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b6ef1f94fd19d4488f88aafdd866de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chickenPrefab: {fileID: 1300417036304485231, guid: ce16e2868d063c248baeee9600fa71c8, type: 3}
+  chickenPrefab: {fileID: 755310041323290618, guid: c221b44aba6688c49a93b06cbe3191d8, type: 3}
 --- !u!114 &1767454272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a8e6db27154534186b9dad1a3681f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chickenPrefab: {fileID: 1300417036304485231, guid: ce16e2868d063c248baeee9600fa71c8, type: 3}
+  chickenPrefab: {fileID: 755310041323290618, guid: c221b44aba6688c49a93b06cbe3191d8, type: 3}
 --- !u!4 &1767454273
 Transform:
   m_ObjectHideFlags: 0

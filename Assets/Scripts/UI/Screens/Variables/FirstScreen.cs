@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class FirstScreen : BasicScreen
 {
     public Button a;
+    public GameManager gameManager;
 
     private void Start()
     {
@@ -29,5 +30,6 @@ public class FirstScreen : BasicScreen
     private void ScreenGame()
     {
         UIManager.Instance.ShowScreen(ScreenTypes.Game);
+        gameManager.StartGame();
     }
 }

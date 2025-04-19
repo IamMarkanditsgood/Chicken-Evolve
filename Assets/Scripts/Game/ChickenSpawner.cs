@@ -1,18 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChickenSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject chickenPrefab;
 
-    private void Start()
+    bool isGameStarted;
+    int houses;
+
+    int time = 10;
+    int timer;
+    
+
+    public void StartGame()
     {
-        for (int i = 0; i < 20; i++)
+        isGameStarted = true;
+    }
+
+    private void Update()
+    {
+        if (houses < 10)
         {
+            houses++;
             Vector3 pos = new Vector3(Random.Range(-4f, 4f), Random.Range(-4f, 4f), 0);
             GameObject go = Instantiate(chickenPrefab, pos, Quaternion.identity);
-            go.GetComponent<MergeChicken>().Init(Random.Range(3, 5)); // Стартовий рівень 1 або 2
+            go.GetComponent<MergeChicken>().Init(Random.Range(1, 3));
         }
     }
 }
