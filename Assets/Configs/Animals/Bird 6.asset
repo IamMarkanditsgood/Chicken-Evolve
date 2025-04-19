@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 6
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: e3051305479084849b4e033417f387aa, type: 3}
+  Name: "Harpy Eagle \u2014 The Jungle\u2019s Winged Powerhouse "
+  Description: "The Harpy Eagle is one of the largest and most powerful birds of
+    prey in the world. Found in the tropical rainforests of Central and South America,
+    it has striking features: massive talons the size of a bear's claws, bold black-and-white
+    plumage, and a fierce crown of feathers atop its head. It truly looks like a
+    mythological creature come to life. Harpy Eagles specialize in hunting monkeys,
+    sloths, and large birds high in the forest canopy. With incredible strength and
+    agility, they can swoop silently through the trees and snatch prey in midair.
+    Their talons are so strong, they can crush bone instantly. Despite their dominance
+    in the sky, Harpy Eagles are rare and threatened by deforestation. As rainforest
+    guardians, they play a crucial role in keeping ecosystems in balance. Mysterious,
+    regal, and awe-inspiring \u2014 the Harpy Eagle is the king of the canopy. "

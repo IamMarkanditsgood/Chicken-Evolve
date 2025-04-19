@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 10
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 143432b52e9e8be4da9c6d0e81eaae41, type: 3}
+  Name: "Helmeted Hornbill \u2014 The Warrior of the Rainforest "
+  Description: "The Helmeted Hornbill is one of the most unusual and ancient-looking
+    birds in the world. Native to the tropical forests of Southeast Asia, it gets
+    its name from the solid casque \u2014 a helmet-like structure on top of its massive
+    beak. Unlike other hornbills, this casque is made of dense, ivory-like keratin.
+    During the breeding season, males engage in dramatic aerial battles, crashing
+    into each other mid-air using their casques like battering rams. The loud collisions
+    echo through the jungle and are part of their fight for territory and mates.
+    Tragically, this bird is critically endangered. Its casque has become a target
+    for illegal wildlife trade, sold as \u201Cred ivory.\u201D But in the wild, the
+    Helmeted Hornbill remains a symbol of strength, age, and mystery \u2014 a forest
+    warrior with a prehistoric soul. "

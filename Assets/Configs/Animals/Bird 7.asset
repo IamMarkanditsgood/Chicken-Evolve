@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 7
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 228d585d294d3c74e869d210546764b1, type: 3}
+  Name: "Potoo \u2014 The Living Tree Branch "
+  Description: "The Potoo is one of nature\u2019s greatest masters of disguise. Found
+    across Central and South America, this nocturnal bird spends its days perched
+    motionless on tree stumps or branches, blending in so perfectly that it's nearly
+    impossible to spot. With its mottled gray-brown feathers and stiff posture, it
+    looks exactly like a broken limb. At night, the Potoo comes alive. It hunts insects
+    using its enormous mouth, which opens wider than you\u2019d expect from its sleepy
+    daytime look. Its giant yellow eyes help it see in the dark, and its ghostly,
+    echoing calls give it an eerie presence in the forest. Despite its spooky vibe,
+    the Potoo is harmless and mysterious \u2014 a quiet bird that prefers solitude
+    and shadows. Many people go their whole lives without realizing they've passed
+    right by one. "

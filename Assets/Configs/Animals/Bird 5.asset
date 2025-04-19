@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 5
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: d62e55c111f183a448c6bd48d66c58e2, type: 3}
+  Name: "Lyrebird \u2014 Nature\u2019s Master of Sound "
+  Description: "The Lyrebird, native to the forests of Australia, is a true performer
+    of the animal world. It\u2019s not just its elegant tail \u2014 shaped like a
+    classical lyre \u2014 that makes it special, but its jaw-dropping ability to
+    mimic almost any sound it hears. From other bird calls to car alarms, chainsaws,
+    camera shutters, and even human voices \u2014 the Lyrebird\u2019s vocal range
+    is almost unbelievable. Male Lyrebirds use these sounds to create elaborate songs
+    during their courtship displays. They spread their tails over their heads like
+    a fan and perform on special display platforms they've cleared themselves \u2014
+    blending sight and sound into one unforgettable show. Despite their fame, Lyrebirds
+    are quite shy and prefer dense forest environments. Their mimicry isn\u2019t
+    just a party trick \u2014 it plays a vital role in attracting mates and establishing
+    territory. With talent that rivals any pop star, the Lyrebird is nature\u2019s
+    ultimate sound designer. "

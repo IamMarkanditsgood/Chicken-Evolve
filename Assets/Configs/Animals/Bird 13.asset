@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 13
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 36fad1c66601ce04b8f92172933d4296, type: 3}
+  Name: "Andean Cock-of-the-rock \u2014 The Cloud Forest Showman "
+  Description: "The Andean Cock-of-the-rock is a bold and charismatic bird that lives
+    in the misty cloud forests of the Andes Mountains. The male is impossible to
+    miss: bright orange from head to belly, with a huge, rounded crest that looks
+    like a pompadour hairstyle straight out of a rock concert. During mating season,
+    males gather at leks (display arenas) and compete for attention through a mix
+    of hopping, wing-fluttering, and sharp, barking calls. It\u2019s loud, chaotic,
+    and full of drama \u2014 just the way these birds like it. Despite their eye-catching
+    look, these birds are quite shy outside of mating season and stick to dense,
+    mossy forests. For birdwatchers, spotting one in the wild is like seeing a living
+    jewel flash out of the mist. "

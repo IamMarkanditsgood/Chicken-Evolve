@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 4
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 686719c4f56d9d84a94584e711a56e64, type: 3}
+  Name: "Resplendent Quetzal \u2014 The Emerald Spirit of the Forest "
+  Description: "The Resplendent Quetzal is one of the most breathtaking birds in
+    the world. Found in the cloud forests of Central America, it\u2019s especially
+    famous in Guatemala, where it\u2019s a national symbol and even featured on the
+    currency. Males have brilliant green plumage, a bright red chest, and flowing
+    tail feathers that can be longer than their body. In ancient Mayan and Aztec
+    cultures, the quetzal was seen as a sacred creature representing freedom and
+    the divine. Killing one was forbidden \u2014 instead, its feathers were carefully
+    collected for royal robes and ceremonial headdresses. Quetzals feed mostly on
+    fruit, especially wild avocados, and nest in tree holes. Despite their beauty,
+    they are shy and elusive in the wild, often hiding high among the misty branches.
+    To spot one is a rare and magical experience \u2014 a living jewel in the heart
+    of the rainforest. "

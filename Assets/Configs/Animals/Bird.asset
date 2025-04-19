@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 75e4ce6371e68004485dbad2ca22a88b, type: 3}
+  Name: "Shoebill \u2014 The Prehistoric Stalker "
+  Description: "The Shoebill, also known as the whalehead or shoebill stork, is a
+    massive bird that lives in the swamps of Central and East Africa. It gets its
+    name from its huge, shoe-shaped bill, which can grow up to 24 cm long and helps
+    it catch slippery prey like lungfish, eels, and even baby crocodiles. Despite
+    its dinosaur-like appearance, the Shoebill is a patient and stealthy hunter.
+    It stands completely still for long periods, waiting for the perfect moment to
+    strike. When it does move, it's fast, precise, and surprisingly silent for such
+    a large bird. Shoebills can reach over 140 cm in height and have wingspans of
+    up to 2.5 meters. They\u2019re mostly solitary, making their nests in remote
+    wetlands. One of their most unusual traits is their bill-clattering greeting
+    sound, which can resemble a machine gun. Mysterious, majestic, and a little intimidating
+    \u2014 the Shoebill is truly one of nature\u2019s most unique birds. "

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 15
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 6c300985667cc4f46affac4fa378a427, type: 3}
+  Name: "Mandarin Duck \u2014 The Living Painting"
+  Description: "The Mandarin Duck is often called the most beautiful duck in the
+    world \u2014 and one glance explains why. Native to East Asia, the male boasts
+    an incredible palette of colors: bright orange \"sails\" on its back, green and
+    purple head feathers, white stripes, and a coral-red bill. It looks like it walked
+    out of a watercolor painting. These ducks are symbols of love and fidelity in
+    many Asian cultures, especially in China and Japan, where they\u2019re often
+    given as wedding gifts or featured in art. This reputation isn\u2019t just legend
+    \u2014 Mandarin Ducks are known to form strong pair bonds during the breeding
+    season. In recent years, wild populations have also appeared in Europe and North
+    America, where escaped ornamental ducks have established themselves. Whether
+    in a palace pond or a city park, a Mandarin Duck is guaranteed to turn heads. "

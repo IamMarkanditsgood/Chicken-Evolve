@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 14
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 3a6b369d345ff824eac48aba82740b3a, type: 3}
+  Name: "Bearded Vulture \u2014 The Bone-Eater of the Skies "
+  Description: "The Bearded Vulture, also known as the Lammergeier, is one of the
+    most mysterious and dramatic-looking raptors in the world. Found in high mountains
+    across Europe, Asia, and Africa, it feeds mostly on bones \u2014 yes, bones!
+    It carries them into the air and drops them onto rocks to crack them open and
+    get to the nutritious marrow inside. Its name comes from the dark \u201Cbeard\u201D
+    of feathers under its chin, but what really makes it striking is its fiery appearance.
+    Bearded Vultures often stain their white feathers red by bathing in iron-rich
+    soil \u2014 scientists believe this could be a form of social signaling or intimidation.
+    Despite its fearsome habits, the Bearded Vulture is peaceful and doesn\u2019t
+    hunt live prey. It's a high-flying scavenger with a gothic look and a taste for
+    calcium \u2014 truly one of nature\u2019s strangest survival specialists. "

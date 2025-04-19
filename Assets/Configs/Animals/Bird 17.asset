@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 17
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 1e0c92ef3cb8f6240b53fd9c03841ca8, type: 3}
+  Name: "Long-wattled Umbrellabird \u2014 The Jungle's Thunder Voice "
+  Description: "The Long-wattled Umbrellabird is a rare and unforgettable sight in
+    the rainforests of Ecuador and Colombia. Males have a large, umbrella-shaped
+    crest that drapes over their beak like a feathered hat \u2014 but the real showstopper
+    is the long, inflatable wattle hanging from their chest, sometimes nearly as
+    long as their body! During mating season, this throat wattle inflates like a
+    balloon and helps produce deep, booming calls that echo through the forest. The
+    sound is low, powerful, and can be heard from far away \u2014 almost like a jungle
+    bass drum. These birds prefer to stay hidden high in the canopy, and their unusual
+    looks help them stand out when it's time to attract a mate. Strange, stylish,
+    and loud \u2014 the Long-wattled Umbrellabird is nature\u2019s goth rock frontman
+    with a built-in sound system "
