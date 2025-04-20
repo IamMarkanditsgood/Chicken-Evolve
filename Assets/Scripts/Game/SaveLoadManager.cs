@@ -9,29 +9,11 @@ public class SaveLoadManager : MonoBehaviour
 {
     private static string SavePath => Application.persistentDataPath + "/save.json";
 
-    public static void SaveChickens(List<MergeChicken> chickens)
+    [System.Serializable]
+    public class SaveData
     {
-        List<ChickenSaveData> dataList = new List<ChickenSaveData>();
-
-        foreach (var chick in chickens)
-        {
-            Vector2 pos = chick.transform.position;
-            dataList.Add(new ChickenSaveData(chick.Level, pos));
-        }
-
-        string json = JsonUtility.ToJson(new ChickenSaveWrapper(dataList));
-        File.WriteAllText(SavePath, json);
-    }
-
-    public static List<ChickenSaveData> LoadChickens()
-    {
-
-        if (!File.Exists(SavePath)) return null;
-
-        string json = File.ReadAllText(SavePath);
-        ChickenSaveWrapper wrapper = JsonUtility.FromJson<ChickenSaveWrapper>(json);
-
-        return wrapper?.Chickens ?? new List<ChickenSaveData>();
+        public List<ChickenSaveData> chickens;
+        public List<int> unlockedLevels;
     }
 
     [System.Serializable]
@@ -43,5 +25,39 @@ public class SaveLoadManager : MonoBehaviour
         {
             Chickens = chickens;
         }
+    }
+
+    public static void SaveChickens(List<MergeChicken> chickens)
+    {
+        Debug.Log(SavePath);
+        SaveData saveData = new SaveData
+        {
+            chickens = chickens.Select(c => new ChickenSaveData(c.Level, c.transform.position)).ToList(),
+            unlockedLevels = GameManager.Instance.GetUnlockedLevels().ToList()
+        };
+
+        string json = JsonUtility.ToJson(saveData, true);
+        File.WriteAllText(SavePath, json);
+    }
+
+    public static SaveData LoadSaveData()
+    {
+        if (!File.Exists(SavePath))
+            return null;
+
+        string json = File.ReadAllText(SavePath);
+        return JsonUtility.FromJson<SaveData>(json);
+    }
+
+    public static List<ChickenSaveData> LoadChickens()
+    {
+        var save = LoadSaveData();
+        return save?.chickens ?? new List<ChickenSaveData>();
+    }
+
+    public static List<int> LoadUnlockedLevels()
+    {
+        var save = LoadSaveData();
+        return save?.unlockedLevels ?? new List<int>();
     }
 }

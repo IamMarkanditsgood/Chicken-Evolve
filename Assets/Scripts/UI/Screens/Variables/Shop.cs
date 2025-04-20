@@ -20,6 +20,9 @@ public class Shop : BasicScreen
 
     void Start()
     {
+        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
+        textManager.SetText(PlayerPrefs.GetInt("Reward"), reward, true);
+        textManager.SetText("10", timeToHome);
         p.onClick.AddListener(Profile);
         H.onClick.AddListener(Home);
 
@@ -61,9 +64,7 @@ public class Shop : BasicScreen
 
     public override void SetScreen()
     {
-        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
-        textManager.SetText(PlayerPrefs.GetInt("Reward"), reward, true);
-        textManager.SetText("10", timeToHome);
+
 
         SetButtons();
     }
@@ -109,8 +110,17 @@ public class Shop : BasicScreen
             PlayerPrefs.SetInt(key, 1);
             SetScreen();
 
+            if (PlayerPrefs.GetInt("Bought") < 5)
+            {
+                int a = PlayerPrefs.GetInt("Bought") + 1;
+                PlayerPrefs.SetInt("Bought", a);
+            }
+            else if (PlayerPrefs.GetInt("Bought") >= 5)
+            {
+                PlayerPrefs.SetInt("Achieve5", 1);
+            }
         }
-        
+
     }
     private void Read(int index)
     {

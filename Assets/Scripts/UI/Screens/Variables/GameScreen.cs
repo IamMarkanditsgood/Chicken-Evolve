@@ -14,6 +14,9 @@ public class GameScreen : BasicScreen
 
     void Start()
     {
+        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
+        textManager.SetText(PlayerPrefs.GetInt("Reward"), reward, true);
+        textManager.SetText("10", timeToHome);
         p.onClick.AddListener(Profile);
         s.onClick.AddListener(Shop);
 
@@ -35,17 +38,23 @@ public class GameScreen : BasicScreen
 
     public override void SetScreen()
     {
-        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
-        textManager.SetText(PlayerPrefs.GetInt("Reward"), reward, true);
-        textManager.SetText("10", timeToHome);
+
     }
 
     public void UpdateCoins(int Coins)
     {
+        if(Coins >= 10000)
+        {
+            PlayerPrefs.SetInt("Achieve3", 1);
+        }
         textManager.SetText(Coins, coins, true);
     }
     public void UpdateReward(int newReward)
     {
+        if (newReward >= 100)
+        {
+            PlayerPrefs.SetInt("Achieve4", 1);
+        }
         textManager.SetText(newReward, reward, true);
     }
     public void UdpateTimer(int time)

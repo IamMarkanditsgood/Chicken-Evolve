@@ -3506,6 +3506,7 @@ MonoBehaviour:
   _view: {fileID: 1802643972}
   _screenType: 0
   a: {fileID: 800929836}
+  gameManager: {fileID: 1125412933}
 --- !u!1 &286130629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,7 +8762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &965552652
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9907,7 +9908,9 @@ MonoBehaviour:
   - {fileID: 1129088272}
   - {fileID: 58554244}
   - {fileID: 1427244460}
-  _popups: []
+  _popups:
+  - {fileID: 1966922694}
+  - {fileID: 1724365869}
 --- !u!4 &1125412931
 Transform:
   m_ObjectHideFlags: 0
@@ -9952,10 +9955,12 @@ MonoBehaviour:
   chickenPrefab: {fileID: 755310041323290618, guid: c221b44aba6688c49a93b06cbe3191d8, type: 3}
   spawnArea: {fileID: 504007460}
   spawnInterval: 10
-  maxChickens: 10
+  maxChickens: 25
   timerText: {fileID: 3539704}
   coinText: {fileID: 1222535288}
   incomeText: {fileID: 963618847}
+  modalPrefab: {fileID: 0}
+  chickenSprites: []
   incomeInterval: 1
 --- !u!114 &1125412934
 MonoBehaviour:
@@ -14479,7 +14484,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -44
   m_Sprite: {fileID: 21300000, guid: 87faa281595d42a49ab0debeb9e9913e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16478,6 +16483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724365868}
+  - component: {fileID: 1724365869}
   m_Layer: 5
   m_Name: MaxChicken
   m_TagString: Untagged
@@ -16505,6 +16511,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1724365869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724365867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7788aba774b9fcf4694adb3532eeb192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _view: {fileID: 598042258}
+  _popupType: 1
+  _closeButton: {fileID: 325769654}
 --- !u!1 &1727791650
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,7 +17319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1802643973
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19092,6 +19113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1966922693}
+  - component: {fileID: 1966922694}
   m_Layer: 5
   m_Name: NewcHICKEN
   m_TagString: Untagged
@@ -19119,6 +19141,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1966922694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966922692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56bcbe55e1f3a7846b4671c937807a6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _view: {fileID: 1463200090}
+  _popupType: 0
+  _closeButton: {fileID: 1789464618}
+  mainChicken: {fileID: 1979778183}
+  chickens:
+  - {fileID: 771539959}
+  - {fileID: 627417151}
+  - {fileID: 688301653}
+  openedChickens:
+  - {fileID: 21300000, guid: d354ed40d4caa2b44a416454d2a7fb5c, type: 3}
+  - {fileID: 21300000, guid: ef6fb31f0d9b31a40aa58e74de7c4743, type: 3}
+  - {fileID: 21300000, guid: 3d74c1ca55911c8419f7740993d5e90e, type: 3}
+  - {fileID: 21300000, guid: 9ad4eac1d82866e49894a998a15cadc9, type: 3}
+  - {fileID: 21300000, guid: 8f011dd5e85d4e24a9c576b85cbcb6f3, type: 3}
+  - {fileID: 21300000, guid: f64f67e9d5e9c00499eb0210dbb2452d, type: 3}
+  - {fileID: 21300000, guid: 7013741a332e1fa49846264c3a674d4e, type: 3}
+  closedChickens:
+  - {fileID: 21300000, guid: 32a8b6df2d7f8c643b68adcb9bca323c, type: 3}
+  - {fileID: 21300000, guid: 32a8b6df2d7f8c643b68adcb9bca323c, type: 3}
+  - {fileID: 21300000, guid: 32a8b6df2d7f8c643b68adcb9bca323c, type: 3}
+  - {fileID: 21300000, guid: 56c1c72757afd1a4a81dc9cd023d4558, type: 3}
+  - {fileID: 21300000, guid: cad3046ca8fee694796ff2c6adce17ba, type: 3}
+  - {fileID: 21300000, guid: 51bc49731c445e444959066cd634441f, type: 3}
+  - {fileID: 21300000, guid: 5a0f0758b6d5596458ebfbd57d831e98, type: 3}
 --- !u!1 &1975331129
 GameObject:
   m_ObjectHideFlags: 0

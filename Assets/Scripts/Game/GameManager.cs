@@ -18,6 +18,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private TMP_Text incomeText;
 
+    private HashSet<int> unlockedLevels = new();
+    [SerializeField] private GameObject modalPrefab;
+    [SerializeField] private Sprite[] chickenSprites;
+    public HashSet<int> GetUnlockedLevels() => unlockedLevels;
+
     public List<MergeChicken> Chickens => chickensOnScene;
 
     private float timer;
@@ -49,10 +54,12 @@ public class GameManager : MonoBehaviour
     private void LoadChickens()
     {
         var savedChickens = SaveLoadManager.LoadChickens();
+        var savedLevels = SaveLoadManager.LoadUnlockedLevels();
+
+        unlockedLevels = new HashSet<int>(savedLevels);
 
         if (savedChickens == null || savedChickens.Count == 0)
         {
-            // якщо збереженн€ немаЇ Ч створити першу курочку
             SpawnChicken(1);
             return;
         }
@@ -93,8 +100,9 @@ public class GameManager : MonoBehaviour
             {
                 totalIncome += chicken.GetProfitPerSecond();
             }
-
+            coins = PlayerPrefs.GetInt("Coins");
             coins += totalIncome;
+            PlayerPrefs.SetInt("Coins", coins);
             UpdateCoinText();
             UpdateIncomeText(); // <== ќновлюЇмо прибуток у UI
         }
@@ -121,6 +129,23 @@ public class GameManager : MonoBehaviour
         merge.Init(level);
 
         chickensOnScene.Add(merge);
+
+        if (!unlockedLevels.Contains(level))
+        {
+            unlockedLevels.Add(level);
+            if(level != 1 && level != 7)
+            {
+                NewChickenPopup newChickenPopup = (NewChickenPopup) UIManager.Instance.GetPopup(PopupTypes.NewChicken);
+                newChickenPopup.Init(level);
+                UIManager.Instance.ShowPopup(PopupTypes.NewChicken);
+            }
+            else if(level == 7)
+            {
+                Destroy(newChicken);
+                UIManager.Instance.ShowPopup(PopupTypes.MaxChickecn);
+                AddCoins(200);
+            }
+        }
     }
 
     public void RemoveChicken(MergeChicken chicken)

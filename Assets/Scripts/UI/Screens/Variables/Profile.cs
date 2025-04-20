@@ -26,6 +26,7 @@ public class Profile : BasicScreen
 
     void Start()
     {
+        textManager.SetText("10", timeToHome);
         s.onClick.AddListener(Shop);
         H.onClick.AddListener(Home);
         i.onClick.AddListener(Info);
@@ -52,7 +53,7 @@ public class Profile : BasicScreen
 
     public override void SetScreen()
     {
-        textManager.SetText("10", timeToHome);
+
         avatarManager.SetSavedPicture();
         name.text = PlayerPrefs.GetString("Name", "USER_NAME");
         SetTimer();
@@ -97,16 +98,19 @@ public class Profile : BasicScreen
     private void Shop()
     {
         UIManager.Instance.ShowScreen(ScreenTypes.Shop);
+        PlayerPrefs.SetString("Name", name.text);
     }
 
     private void Home()
     {
         UIManager.Instance.ShowScreen(ScreenTypes.Game);
+        PlayerPrefs.SetString("Name", name.text);
     }
 
     private void Info()
     {
         UIManager.Instance.ShowScreen(ScreenTypes.Info);
+        PlayerPrefs.SetString("Name", name.text);
     }
     private void Avatar()
     {
